@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Garagets Fordon - Garage</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway|Alegreya+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <!-- Renders the map API on the page-->
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 44.540, lng: -78.546},
+          zoom: 8
+        });
+      }
+    </script>
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <section class="home-title">
+        <img src="../icons/caricon.png" alt="Car Icon"/><span><a href="index.html">Garage Home</a></span>
+      </section>
+      <section class="nav-links">
+        <ul>
+          <li><a href="fordon.html">Garagets Fordon</a></li>
+          <li><a href="about.html">Om Oss / Kontakt</a></li>
+        </ul>
+      </section>
+    </nav>
+    <div>
+      <h1>Om Oss / Kontakt</h1>
+      <h4>Har du frågor? Kontakta oss.</h4>
+    </div>
+  </header>
+    <main class="container main">
+      <div class="main-wrapper">
+        <div class="about-us">
+          <section class="about-us-workers">
+            <img src="../pictures/garage.jpg" alt="garage image" title="Anna working hard">
+            <div class="workers-details">
+              <p>
+                Non ergo erunt homines deliciis diffluentes audiendi, si quando de amicitia, quam nec usu nec ratione habent cognitam, disputabunt. Nam quis est, pro deorum fidem atque hominum! qui velit, ut neque diligat quemquam nec ipse ab ullo diligatur, circumfluere omnibus copiis atque in omnium rerum abundantia vivere? Haec enim est tyrannorum vita nimirum, in qua nulla fides, nulla caritas, nulla stabilis benevolentiae potest esse fiducia, omnia semper suspecta atque sollicita, nullus locus amicitiae.
+              </p>
+            </div>
+          </section>
+          <section class="location">
+            <div id="map"></div>
+            <p>
+              Non ergo erunt homines deliciis diffluentes audiendi, si quando de amicitia, quam nec usu nec ratione habent cognitam, disputabunt. Nam quis est, pro deorum fidem atque hominum! qui velit, ut neque diligat quemquam nec ipse ab ullo diligatur, circumfluere omnibus copiis atque in omnium rerum abundantia vivere? Haec enim est tyrannorum vita nimirum, in qua nulla fides, nulla caritas, nulla stabilis benevolentiae potest esse fiducia, omnia semper suspecta atque sollicita, nullus locus amicitiae.
+            </p>
+
+            <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+                async defer></script>
+          </section>
+      </div>
+    </main>
+    <footer class="container">
+      <div class="main-wrapper footer">
+        <p>Copyright &copy; <a href="index.html">Garage</a> 2016</p>
+        <p>Designed and developed by <a href="#">Eddy Ntambwe</a></p>
+      </div>
+    </footer>
+</body>
+</html>
